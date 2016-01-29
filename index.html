@@ -8,6 +8,62 @@
     <title>Party On! Pizza</title>
   </head>
   <body>
+    <div class="container-fluid jumbotron text-center">
+      <h1>Party On! Pizza</h1>
+    </div>
+    <div class="container">
+      <form id="pizzas">
+        <div class="row">
+          <h2>Pick your toppings!</h3>
+          <p>All toppings are 75 cents</p>
+          <div class="col-sm-4">
+            <h3>Sauces:</h3>
+            <input type="checkbox" name="toppings" class="toppings" value="pesto"> Basil Pesto<br>
+            <input type="checkbox" name="toppings" class="toppings" value="garlicOil"> Crushed Garlic &amp; Olive Oil<br>
+            <input type="checkbox" name="toppings" class="toppings" value="BBQ"> Barbeque Sauce<br>
+          </div>
+          <div class="col-sm-4">
+            <h3>Veggies:</h3>
+            <input type="checkbox" name="toppings" class="toppings" value="sunDrieds"> Sun Dried Tomatoes<br>
+            <input type="checkbox" name="toppings" class="toppings" value="artichoke"> Artichoke Hearts<br>
+            <input type="checkbox" name="toppings" class="toppings" value="jalapenos"> Jalapenos<br>
+            <input type="checkbox" name="toppings" class="toppings" value="mushrooms"> Mushrooms<br>
+            <input type="checkbox" name="toppings" class="toppings" value="onion"> Carmelized Onion<br>
+            <input type="checkbox" name="toppings" class="toppings" value="olives"> Olives<br>
+            <input type="checkbox" name="toppings" class="toppings" value="garlic"> Roasted Garlic<br>
+          </div>
+          <div class="col-sm-4">
+            <h3>Meat:</h3>
+            <input type="checkbox" name="toppings" class="toppings" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="toppings" class="toppings" value="bacon"> Bacon<br>
+            <input type="checkbox" name="toppings" class="toppings" value="sausage"> Sausage<br>
+            <input type="checkbox" name="toppings" class="toppings" value="pancetta"> Pancetta<br>
+            <input type="checkbox" name="toppings" class="toppings" value="meatballs"> Meatballs<br>
+          </div>
+        </div>
+        <div class="row">
+         <h2>What size pizza would you like?</h2>
+         <div class="form-group">
+           <input type="radio" name="size" class="size" value="small"> Small<br>
+           <input type="radio" name="size" class="size" value="medium"> Medium<br>
+           <input type="radio" name="size" class="size" value="large"> Large<br>
+           <input type="radio" name="size" class="size" value="extraLarge"> Extra Large<br>
+         </div>
+         <h2>How many pizzas?</h2>
+          <div class="form-group">
+            <input type=number name="pizza_quantity" id="pizza_quantity">
+          </div>
+
+          <button type="submit" class="btn">Place order</button>
+
+      </form>
+    </div>
+    <div id="show-order">
+      <p>Pizza Toppings: <span class="pizza-toppings"></span></p>
+      <p>Pizza Size: <span class="pizza-size"></span></p>
+      <p>Number of Pizzas: <span class="pizza-number"></span></p>
+      <p>Total Price: <span class="pizza-price"></span></p>
+    </div>
 
   </body>
 </html>

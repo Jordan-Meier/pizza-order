@@ -23,13 +23,18 @@
         <div class="row">
           <h2>Pick your toppings!</h3>
           <p>All toppings are 75 cents</p>
-          <div class="col-sm-4">
+          <div id= "sauces" class="col-sm-3">
             <h3>Sauces:</h3>
             <input type="checkbox" name="toppings" class="toppings" value="pesto"> Basil Pesto<br>
             <input type="checkbox" name="toppings" class="toppings" value="garlicOil"> Crushed Garlic &amp; Olive Oil<br>
             <input type="checkbox" name="toppings" class="toppings" value="BBQ"> Barbeque Sauce<br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
           </div>
-          <div class="col-sm-4">
+          <div id= "veggies" class="col-sm-3">
             <h3>Veggies:</h3>
             <input type="checkbox" name="toppings" class="toppings" value="sunDrieds"> Sun Dried Tomatoes<br>
             <input type="checkbox" name="toppings" class="toppings" value="artichoke"> Artichoke Hearts<br>
@@ -38,14 +43,18 @@
             <input type="checkbox" name="toppings" class="toppings" value="onion"> Carmelized Onion<br>
             <input type="checkbox" name="toppings" class="toppings" value="olives"> Olives<br>
             <input type="checkbox" name="toppings" class="toppings" value="garlic"> Roasted Garlic<br>
+            <br>
           </div>
-          <div class="col-sm-4">
+          <div id="meat" class="col-sm-3">
             <h3>Meat:</h3>
             <input type="checkbox" name="toppings" class="toppings" value="pepperoni"> Pepperoni<br>
             <input type="checkbox" name="toppings" class="toppings" value="bacon"> Bacon<br>
             <input type="checkbox" name="toppings" class="toppings" value="sausage"> Sausage<br>
             <input type="checkbox" name="toppings" class="toppings" value="pancetta"> Pancetta<br>
             <input type="checkbox" name="toppings" class="toppings" value="meatballs"> Meatballs<br>
+            <br>
+            <br>
+            <br>
           </div>
         </div>
         <div class="row">
@@ -62,15 +71,34 @@
           </div>
 
           <button type="submit" class="btn">Place order</button>
+          <!-- <button type="button" id="submitBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> -->
+
+         Place Order</button>
 
       </form>
     </div>
-    <div id="show-order">
-      <p>Order Name: <span class="order-name"></span></p>
-      <p>Number of Toppings: <span class="pizza-toppings"></span></p>
-      <p>Pizza Size: <span class="pizza-size"></span></p>
-      <p>Number of Pizzas: <span class="pizza-number"></span></p>
-      <p>Total Price: <span class="pizza-price"></span></p>
+    <div class="container text-center" id="show-order">
+      <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Your Order.</h4>
+             </div>
+             <div class="modal-body"> -->
+               <p>Order Name: <span class="order-name"></span></p>
+               <p>Number of Toppings: <span class="pizza-toppings"></span></p>
+               <p>Pizza Size: <span class="pizza-size"></span></p>
+               <p>Number of Pizzas: <span class="pizza-number"></span></p>
+               <p>Total Price: <span class="pizza-price"></span></p>
+             <!-- </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div> -->
+           <!-- </div> -->
+         <!-- </div> -->
+       <!-- </div> -->
+
     </div>
 
   </body>

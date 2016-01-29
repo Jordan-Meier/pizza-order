@@ -2,7 +2,12 @@
   background-image: url(../img/wayne1.jpg), url(../img/wayne2.jpg);
   background-position: left bottom, right bottom;
   background-repeat: no-repeat;
-  background-color: #d7d7d7;
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: #eee5ca;
 }
 
 #show-order {
@@ -10,14 +15,22 @@
 }
 
 .col-sm-3 {
-  border: 3px solid red;
+  border: 3px solid #fe9900;
   border-radius: 20px;
-
-
+  background-color: #aaeedd;
 }
 
 #veggies {
   margin-left: 10px;
   margin-right: 10px;
 
+}
+
+.modal-body h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal-body {
+  font-size: 16px;
 }

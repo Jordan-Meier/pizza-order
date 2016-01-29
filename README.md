@@ -8,7 +8,7 @@
 
 This week's code review project is a website where a user can select various options to create a pizza, submit the form and see the final cost. It uses basic OOP (an object constructor and prototype methods) to achieve this.
 
-![website screen shot](images/screenshot.png)
+![website screen shot](images/screenshot.jpg)
 
 ### Known Bugs
 

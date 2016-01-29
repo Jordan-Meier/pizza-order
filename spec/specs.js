@@ -25,4 +25,9 @@ describe('Pizza', function() {
     expect(testPizza.sizePrice()).to.equal(25);
   });
 
+  it("creates a prototype method to calculate a total price from sizePrice plus number of toppings added", function () {
+    var testPizza = new Pizza (3, "medium");
+    expect(testPizza.pizzaPrice()).to.equal(17.25);
+  })
+
 });

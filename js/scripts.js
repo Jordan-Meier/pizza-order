@@ -26,13 +26,14 @@ Pizza.prototype.pizzaPrice = function() {
 
 //User Interface Logic
 $(document).ready(function() {
-  $("form#pizzas").submit(function(event) {
-    event.preventDefault();
+  $("#myBtn").click(function() {
+    $("#myModal").modal();
+
     var name = $("input#orderName").val();
     var toppings = 0;
-    var toppingsArray = [];
+    var toppingArray = [];
       $(".toppings:checked").each(function()  {
-        toppingsArray[toppings++] = parseInt($(this).val());
+        toppingArray[toppings++] = parseInt($(this).val());
       });
 
     var size = $(".size:checked").val();
@@ -43,8 +44,9 @@ $(document).ready(function() {
     $(".pizza-toppings").text(toppings);
     $(".pizza-size").text(size);
     $(".pizza-number").text(quantity);
-    $(".pizza-price").text(total);
+    $(".pizza-price").text("$" + total);
 
+    event.preventDefault();
   });
 
 });

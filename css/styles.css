@@ -10,8 +10,14 @@ body {
   background-color: #eee5ca;
 }
 
-#show-order {
+h2 {
+  font-size: 34px;
+}
 
+#info p {
+  font-family: open sans;
+  font-size: 18px;
+  text-align: center;
 }
 
 .col-sm-3 {
@@ -33,4 +39,8 @@ body {
 
 .modal-body {
   font-size: 16px;
+}
+
+#myModal {
+  background-color: lightblue;
 }

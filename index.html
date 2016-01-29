@@ -16,15 +16,14 @@
       <form id="pizzas">
         <div class="row">
           <h2>What's your Name?</h2>
-           <div class="form-group">
-             <input type=text name="orderName" id="orderName" placeholder="John Doe">
-           </div>
-
+          <div class="form-group">
+            <input type=text name="orderName" id="orderName" placeholder="Party on, Garth!">
+          </div>
         </div>
         <div class="row">
           <h2>Pick your toppings!</h3>
-          <p>All toppings are 75 cents</p>
-          <div id= "sauces" class="col-sm-3">
+          <p>Start with our home made dough,marinara sauce and mozzarella cheese. All toppings, including alternate sauces, are 75 cents.</p>
+          <div id="sauces" class="col-sm-3">
             <h3>Sauces:</h3>
             <input type="checkbox" name="toppings" class="toppings" value="pesto"> Basil Pesto<br>
             <input type="checkbox" name="toppings" class="toppings" value="garlicOil"> Crushed Garlic &amp; Olive Oil<br>
@@ -59,73 +58,45 @@
           </div>
         </div>
         <div class="row">
-         <h2>What size pizza would you like?</h2>
-         <div class="form-group">
-           <input type="radio" name="size" class="size" value="small"> Small<br>
-           <input type="radio" name="size" class="size" value="medium"> Medium<br>
-           <input type="radio" name="size" class="size" value="large"> Large<br>
-           <input type="radio" name="size" class="size" value="extraLarge"> Extra Large<br>
-         </div>
-         <h2>How many pizzas?</h2>
+          <h2>What size pizza would you like?</h2>
+          <div class="form-group">
+            <input type="radio" name="size" class="size" value="small"> Small (12")<br>
+            <input type="radio" name="size" class="size" value="medium"> Medium (14")<br>
+            <input type="radio" name="size" class="size" value="large"> Large (16")<br>
+            <input type="radio" name="size" class="size" value="XL"> Extra Large (18")<br>
+          </div>
+          <h2>How many pizzas?</h2>
           <div class="form-group">
             <input type=number name="pizza_quantity" id="pizzaQuantity">
           </div>
-
           <button type="button" id= "myBtn" class="btn btn-lg btn-primary">Place order</button>
-
+        </div>
       </form>
-    </div>
-    <div id="myModal" class="modal fade">
-       <div class="modal-dialog">
-         <div class="modal-content">
-           <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h3 class="modal-title">Your Order</h3>
-           </div>
-           <div class="modal-body">
-             <p>Order Name: <span class="order-name"></span></p>
-             <p>Number of Toppings: <span class="pizza-toppings"></span></p>
-             <p>Pizza Size: <span class="pizza-size"></span></p>
-             <p>Number of Pizzas: <span class="pizza-number"></span></p>
-             <p>Total Price: <span class="pizza-price"></span></p>
-
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-           </div>
-         </div>
-       </div>
-     </div>
-
-
-
-
-
-
-
-    <!-- <div class="container" >
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog" role="document">
-           <div class="modal-content">
-             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <h4 class="modal-title" id="myModalLabel">Your Order.</h4>
-             </div>
-             <div class="modal-body">
-               <p>Order Name: <span class="order-name"></span></p>
-               <p>Number of Toppings: <span class="pizza-toppings"></span></p>
-               <p>Pizza Size: <span class="pizza-size"></span></p>
-               <p>Number of Pizzas: <span class="pizza-number"></span></p>
-               <p>Total Price: <span class="pizza-price"></span></p>
-             </div>
-             <div class="modal-footer">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-             </div>
-           </div>
-         </div>
-       </div>
-
-    </div> -->
-
+            </div>
+            <div class="modal-body">
+              <h4>Order Name:</h4>
+                <p><span class="order-name"></span></p>
+              <h4>Number of Toppings:</h4>
+                <p><span class="pizza-toppings"></span></p>
+              <h4>Pizza Size:</h4>
+                <p><span class="pizza-size"></span></p>
+              <h4>Number of Pizzas:</h4>
+                <p><span class="pizza-number"></span></p>
+              <h4>Total Price:</h4>
+                <p><span class="pizza-price"></span></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

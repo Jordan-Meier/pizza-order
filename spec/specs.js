@@ -20,4 +20,9 @@ describe('Pizza', function() {
     expect(testPizza.sizePrice()).to.equal(20);
   });
 
+  it("creates a base price for an extra large sized pizza", function () {
+    var testPizza = new Pizza (0, "extra large");
+    expect(testPizza.sizePrice()).to.equal(25);
+  });
+
 });

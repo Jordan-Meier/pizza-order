@@ -14,6 +14,13 @@
     <div class="container">
       <form id="pizzas">
         <div class="row">
+          <h2>What's your Name?</h2>
+           <div class="form-group">
+             <input type=text name="orderName" id="orderName" placeholder="John Doe">
+           </div>
+
+        </div>
+        <div class="row">
           <h2>Pick your toppings!</h3>
           <p>All toppings are 75 cents</p>
           <div class="col-sm-4">
@@ -51,7 +58,7 @@
          </div>
          <h2>How many pizzas?</h2>
           <div class="form-group">
-            <input type=number name="pizza_quantity" id="pizza_quantity">
+            <input type=number name="pizza_quantity" id="pizzaQuantity">
           </div>
 
           <button type="submit" class="btn">Place order</button>
@@ -59,7 +66,8 @@
       </form>
     </div>
     <div id="show-order">
-      <p>Pizza Toppings: <span class="pizza-toppings"></span></p>
+      <p>Order Name: <span class="order-name"></span></p>
+      <p>Number of Toppings: <span class="pizza-toppings"></span></p>
       <p>Pizza Size: <span class="pizza-size"></span></p>
       <p>Number of Pizzas: <span class="pizza-number"></span></p>
       <p>Total Price: <span class="pizza-price"></span></p>

@@ -46,6 +46,11 @@ $(document).ready(function() {
     $(".pizza-number").text(quantity);
     $(".pizza-price").text("$" + total);
 
+    $("input#orderName").val("");
+    $("input:checkbox").removeAttr('checked');
+    $("input#pizzaQuantity").val ("");
+
+
     event.preventDefault();
   });
 

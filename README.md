@@ -1,26 +1,38 @@
-# Pizza pizza
+# Pizza ordering Assessment
 
-##### Epicodus intro code review, week 4.
+## Epicodus intro week 4 code review
 
-#### By Jordan Meier
+### By: Jordan Meier
 
-## Description
+### Description
 
+This week's code review project is a website where a user can select various options to create a pizza, submit the form and see the final cost. It uses basic OOP (an object constructor and prototype methods) to achieve this.
 
-## Setup
+![website screen shot](images/screenshot.png)
 
-Install Pizza pizza by cloning this repository.
+### Known Bugs
 
-## Technologies Used
+No known bugs at this time.
 
-Application: JavaScript and jQuery
-Testing:  Mocha and Chai
+### Setup
 
-### Legal
+You can clone this repo onto your desktop and open the index.html, or go to jordan-meier.github.io/pizza-order
+
+### Technologies Used
+
+HTML
+CSS
+jQuery
+JavaScript
+Mocha 2.3.4
+Chai 3.4.2
+Bootstrap v3.3.6
+
+###Copyright & Licensing
 
 Copyright (c) 2015 **Jordan Meier**
 
-This software is licensed under the MIT license.
+*This software is licensed under the MIT license.*
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

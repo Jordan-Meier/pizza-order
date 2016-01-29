@@ -30,12 +30,18 @@ $(document).ready(function() {
     var toppings = 0;
     var toppingsArray = [];
       $(".toppings:checked").each(function()  {
-
+        toppingsArray[toppings++] = parseInt($(this).val());
       });
 
     var size = $(".size:checked").val();
     var quantity = $("input#pizzaQuantity").val();
-    var newPizza = new Pizza(toppings, size)
+    var newPizza = new Pizza(toppings, size);
+    var total = newPizza.pizzaPrice() * quantity;
+    $(".pizza-toppings").text(toppings);
+    $(".pizza-size").text(size);
+    $(".pizza-number").text(quantity);
+    $(".pizza-price").text(total);
+
   });
 
 });

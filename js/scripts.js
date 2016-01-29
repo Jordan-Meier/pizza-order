@@ -1,5 +1,6 @@
 //BDD
-function Pizza(toppings, size) {
+function Pizza(name, toppings, size) {
+  this.name = name;
   this.toppings = toppings;
   this.size = size;
 }
@@ -27,6 +28,7 @@ Pizza.prototype.pizzaPrice = function() {
 $(document).ready(function() {
   $("form#pizzas").submit(function(event) {
     event.preventDefault();
+    var name = $("input#orderName").val();
     var toppings = 0;
     var toppingsArray = [];
       $(".toppings:checked").each(function()  {
@@ -35,8 +37,9 @@ $(document).ready(function() {
 
     var size = $(".size:checked").val();
     var quantity = $("input#pizzaQuantity").val();
-    var newPizza = new Pizza(toppings, size);
+    var newPizza = new Pizza(name, toppings, size);
     var total = newPizza.pizzaPrice() * quantity;
+    $(".order-name").text(name);
     $(".pizza-toppings").text(toppings);
     $(".pizza-size").text(size);
     $(".pizza-number").text(quantity);
